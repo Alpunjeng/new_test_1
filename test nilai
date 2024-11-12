@@ -1,0 +1,28 @@
+nama = input("Masukkan nama mahasiswa: ")
+tugas = float(input("Masukkan nilai Tugas: "))
+uts = float(input("Masukkan nilai UTS: "))
+uas = float(input("Masukkan nilai UAS: "))
+
+
+nilai_tugas = tugas * 0.20
+nilai_uts = uts * 0.30
+nilai_uas = uas * 0.50
+nilai_akhir = nilai_tugas + nilai_uts + nilai_uas
+
+
+if nilai_akhir >= 80:
+    grade = 'A'
+elif nilai_akhir >= 70:
+    grade = 'B'
+elif nilai_akhir >= 60:
+    grade = 'C'
+elif nilai_akhir >= 50:
+    grade = 'D'
+else:
+    grade = 'E'
+
+
+print("\nHasil Akhir\n21")
+print(f"Nama Mahasiswa: {nama}")
+print(f"Nilai Akhir: {nilai_akhir:.2f}")
+print(f"Grade: {grade}")
